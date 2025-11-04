@@ -29,6 +29,30 @@
                 })
             }
             
+            function displayOutPut(data) {
+                let output = "<table border='1' cellspacing='0' cellpadding='5'>";
+
+                for (let a in data) {
+                    output +=
+                    `
+                        <tr onclick="editContact(${data[a].id})">
+                            <td><img src="${rootPath}controller/uploads/${data[a].avatar}" width="50" height="50"/></td>
+                            <td><h5>${data[a].firstname}</h5></td>
+                            <td><h5>${data[a].lastname}</h5></td>
+                        <tr>
+                    `;
+                }
+                output += "</table>";
+                document.getElementById("table").innerHTML = output;
+            }
+
+            function addContact() {
+                window.open("add-contact.html", "_self");
+            }
+
+            function editContact(id) {
+                window.open("edit-contact.html?id=" + id, "_self");
+            }
         </script>
     </body>
 </html>
