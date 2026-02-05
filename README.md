@@ -7,3 +7,10 @@
 - Styling using CSS
 - Separation of configuration and interface files
 - Simple contact-management interface concepts
+
+##🚀 Features
+- View and manage stored contacts
+- Clean and simple user interface
+- Lightweight front-end implementation
+- Easy to extend with JavaScript or backend storage
+
